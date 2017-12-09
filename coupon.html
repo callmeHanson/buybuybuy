@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>我的优惠券列表（4个）</title>
+	<script src="js/rem.js"></script>
+	<link rel="stylesheet" href="lib/mui/css/mui.css">
+	<link rel="stylesheet" href="lib/fa/css/font-awesome.css">
+	<link rel="stylesheet" href="css/coupon.css">
+</head>
+<body>
+	<div class="mm_container">
+		<!-- 头部 -->
+		<header class="mm_header">
+			<a href="javascript:history.go(-1);" class="fa fa-angle-left"></a>
+			<h1 class="sheng">优惠券</h1>
+			<img class="app" src="images/header_app.png" alt="">
+		</header>
+
+		<div class="mm_coupon">
+			<div class="content">
+				<ul class="mui-clearfix">
+
+					<!-- 挖坑 -->
+					<!-- <li>
+						<div class="conn">
+							<a href="#">
+								<img src="http://www.juanlaoda.com/ImageUpload/2013310191729944.jpg" alt="">
+								<p>肯德基</p>
+							</a>
+						</div>
+					</li> -->
+
+
+				</ul>
+			</div>
+
+		</div>
+
+
+		<!-- 底部登录注册 -->
+		<footer class="mm_footer">
+			<div class="mm_footer_t">
+				<a href="javascript:;">登录</a>
+				<a href="javascript:;">注册</a>
+				<a href="#" class="toTop">
+					<i class="fa fa-arrow-up"></i>
+				返回顶部
+				</a>
+			</div>
+			<div class="mm_footer_b">
+				<p class="mm_app">
+					<a href="#"><span class="app">手机APP下载</span></a>
+					<a href="#"><span class="mmm">慢慢买手机版</span></a>
+					--
+					<span>掌上比价平台</span>
+				</p>
+				<p class="mm_com">
+					m.manmanbuy.com
+				</p>
+			</div>
+		</footer>
+	</div>
+	
+	<!-- 模板一 -->
+	<script type="text/html" id='tpl'>
+		{{each result v i}}
+		<li>
+			<div class="conn">
+				<a href="{{v.couponLink}}?couponid={{v.couponId}}">
+					<img src="{{v.couponImg}}" alt="">
+					<p>{{v.couponTitle}}</p>
+				</a>
+			</div>
+		</li>
+		{{/each}}
+	</script>
+
+
+
+	<script src="lib/jquery/jquery-3.2.1.js"></script>
+	<script src="lib/mui/js/mui.js"></script>
+	<script src="lib/artTemplate/template-web.js"></script>
+	
+
+	<script src="js/common.js"></script>
+	<script src="js/coupon.js"></script>
+</body>
+</html>

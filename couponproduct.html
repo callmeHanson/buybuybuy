@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>我的优惠券详情</title>
+	<script src="js/rem.js"></script>
+	<link rel="stylesheet" href="lib/mui/css/mui.css">
+	<link rel="stylesheet" href="lib/fa/css/font-awesome.css">
+	<link rel="stylesheet" href="css/couponproduct.css">
+</head>
+<body>
+	<div class="mm_container">
+		<!-- 头部 -->
+		<header class="mm_header">
+			<a href="javascript:history.go(-1);" class="fa fa-angle-left"></a>
+			<h1 class="sheng">肯德基优惠券</h1>
+			<img class="app" src="images/header_app.png" alt="">
+		</header>
+
+		<div class="mm_coupon">
+
+			<div class="content">
+				<!-- 顶部文字提示 -->
+				<div class="tips">
+					<p>
+						--点餐前出示手机中的优惠券，即可享受优惠--
+					</p>
+				</div>
+				<!-- 主体优惠券列表 -->
+				<div class="list">
+					<ul>
+
+						<!-- 挖坑 -->
+						<!-- <li>
+							<a href="#" class="mui-clearfix">
+								<div class="img_wrap">
+									<img src="http://d3.5ikfc.com/static/thumbs/1016/kfc-5ikfc-108_pc27.jpg" alt="">
+								</div>
+								<div class="info">
+									<p class="tit">
+										C27  两人小食组 新奥尔良烤翅2块+薯条(中)+黄金鸡块5块+劲爆鸡米花(小) 2016年10月凭肯德基优惠券
+									</p>
+									<p class="money">￥ 28</p>
+									<p class="time">
+										有效期至10月31日
+									</p>
+									
+								</div>
+								<p class="right_arrow">
+									<span class="mui-icon mui-icon-arrowright"></span>
+								</p>
+							</a>
+						</li> -->
+
+
+					</ul>
+				</div>
+
+
+			</div>
+
+		</div>
+
+
+		<!-- 底部登录注册 -->
+		<footer class="mm_footer">
+			<div class="mm_footer_t">
+				<a href="javascript:;">登录</a>
+				<a href="javascript:;">注册</a>
+				<a href="#" class="toTop">
+					<i class="fa fa-arrow-up"></i>
+				返回顶部
+				</a>
+			</div>
+			<div class="mm_footer_b">
+				<p class="mm_app">
+					<a href="#"><span class="app">手机APP下载</span></a>
+					<a href="#"><span class="mmm">慢慢买手机版</span></a>
+					--
+					<span>掌上比价平台</span>
+				</p>
+				<p class="mm_com">
+					m.manmanbuy.com
+				</p>
+			</div>
+		</footer>
+	</div>
+	
+<script type="text/html" id="tpl">
+	{{each result v i}}
+	<%
+		var href = v.couponProductImg;
+		var arr = href.split('"');
+		href = arr[1];
+	%>
+	<li>
+		<a href="{{href}}" class="mui-clearfix">
+			
+			<div class="img_wrap">
+				{{@v.couponProductImg}}
+			</div>
+			<div class="info">
+				<p class="tit">
+					{{v.couponProductName}}
+				</p>
+				<p class="money">{{v.couponProductPrice}}</p>
+				<p class="time">
+					{{v.couponProductTime}}
+				</p>
+				
+			</div>
+			<p class="right_arrow">
+				<span class="mui-icon mui-icon-arrowright"></span>
+			</p>
+		</a>
+	</li>
+
+	{{/each}}
+</script>
+
+
+
+	<script src="lib/jquery/jquery-3.2.1.js"></script>
+	<script src="lib/mui/js/mui.js"></script>
+	<script src="lib/artTemplate/template-web.js"></script>
+	
+
+	<script src="js/common.js"></script>
+	<script src="js/couponproduct.js"></script>
+</body>
+</html>

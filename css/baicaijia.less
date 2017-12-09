@@ -1,0 +1,227 @@
+@import 'common.less';
+
+
+.mm_container {
+	background: #fff;
+	> .mm_header {
+		background: #F4483E;
+		height: 2.2rem;
+		> .fa-angle-left {
+			position: absolute;
+			width: 2.2rem;
+			height: 2.2rem;
+			text-align: center;
+			line-height: 2.2rem;
+			font-size: 1.25rem;
+			color: #fff;
+		}
+
+		> .sheng {
+			font-size: 1.0rem;
+			position: absolute;
+			left: 0;
+			top: 0;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			margin: 0;
+			color: #fff;
+		}
+		
+	}
+	> .mm_main {
+		> .bcj_title {
+			height: 2.05rem;
+			border-bottom: 0.175rem solid #F8F8F8;
+			overflow-x: auto;
+			// 修改滚动条的默认样式
+			&::-webkit-scrollbar{width: 0px;height: 0px;}
+			&::-webkit-scrollbar-track{background-color:#bee1eb;}
+			&::-webkit-scrollbar-thumb{background-color:#00aff0;}
+			&::-webkit-scrollbar-thumb:hover {background-color:#9c3}
+			&::-webkit-scrollbar-thumb:active {background-color:#00aff0}
+			> ul {
+				height: 1.9rem;
+				width: 25.0rem;
+				transition: transform 1s;
+				> li {
+					float: left;
+					height: 100%;
+					padding: 0 0.6rem;
+					line-height: 1.75rem;
+					> a {
+						display: block;
+						font-size: 0.7rem;
+						border-bottom: 0.1rem solid transparent;
+					}
+				}
+				> li.now {
+					> a {
+						color: #D90000;
+						border-bottom: 0.1rem solid #D90000;
+					}
+				}
+			}
+		}
+		> .bcj_list {
+			> ul {
+				background: #F7F7F7;
+				> li {
+					background: #fff;
+					margin-bottom: 0.25rem;
+					padding: 0.5rem 0.25rem;
+					overflow: hidden;
+					position: relative;
+					height: 7.5rem;
+					box-sizing: border-box;
+					> a {
+						display: block;
+						position: absolute;
+						left: 0;
+						top: 0;
+						width: 100%;
+						height: 100%;
+						
+					}
+					> .pic_wrap {
+						float: left;
+						> img {
+							display: block;
+							width: 6.5rem;
+							height: 6.5rem;
+						}
+					}
+					> .info {
+						// overflow: hidden;
+						// padding-left: 0.3rem;
+						position: relative;
+						height: 100%;
+						margin-left: 6.7rem;
+						> .up {
+							font-size: 0.7rem;
+							color: #000;
+							> .up_t {
+								height: 1.7rem;
+								line-height: 1.4;
+
+								> span {
+									color: #000;
+								}
+							}
+							> .up_b {
+								margin-top: 0.5rem;
+								font-size: 0.85rem;
+								color: #FC1C25;
+								> em {
+									font-size: 0.3rem;
+
+								}
+								> del {
+									font-size: 0.55rem;
+									color: #A0A1B0;
+									margin-left: 0.6rem;
+								}
+							}
+						}
+						> .down {
+							position: absolute;
+							width: 100%;
+							bottom: 0;
+							> .down_t {
+								// height: 0.65rem;
+								> .bar {
+									width: 100%;
+									height: 1.15rem;
+									// overflow: hidden;
+									> i {
+										position: relative;
+										display: inline-block;
+										width: 4.125rem;
+										height: 0.7rem;
+										border: 1px solid #fc353a;
+										background: #ffb7b7;
+										box-sizing: border-box;
+										border-radius: 0.35rem;
+										> em {
+											position: absolute;
+											left: 0;
+											top: 0;
+											height: 100%;
+											background: #fc353a;
+											border-radius: 0.35rem;
+										}
+										> span {
+											position: absolute;
+											left: 0;
+											top: 0;
+											width: 100%;
+											height: 100%;
+											text-align: center;
+											line-height: 0.7rem;
+											color: #fff;
+										}
+									}
+									> b {
+										font-size: 0.55rem;
+										color: #FC4045;
+										margin-left: 0.5rem;
+										vertical-align: 0.075rem;
+									}
+								}
+							}
+							> .down_b {
+								overflow: hidden;
+								margin-top: 0.2rem;
+								> .down_b_left {
+									float: left;
+									> a {
+										display: block;
+										width: 5.4rem;
+										height: 1.3rem;
+										border: 0.05rem dashed #EC6E70;
+										border-radius: 0.125rem;
+										font-size: 0.6rem;
+										color: #EC6E70;
+										text-align: center;
+										line-height: 1.2rem;
+									}
+								}
+								> .down_b_right {
+									float: right;
+									> a {
+										display: block;
+										width: 3rem;
+										height: 1.4rem;
+										background: #FF5E5D;
+										border: 0.05rem solid #FF4B4A;
+										box-sizing: border-box;
+										border-radius: 5px;
+										color :#fff;
+										font-size: 0.525rem;
+										text-align: center;
+										line-height: 1.4rem;
+									}
+								}
+							}
+						}
+					}
+
+					
+				}
+			}
+		}
+	}
+	> .mm_toTop {
+		position: fixed;
+		bottom: 2%;
+		right: 2%;
+		> a {
+			display: block;
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			background: url('../images/toTop.jpg') no-repeat center center;
+			background-size: 100% 100%;
+		}
+	}
+}

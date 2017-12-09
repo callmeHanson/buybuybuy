@@ -1,0 +1,211 @@
+@import 'common.less';
+
+.mm_container {
+	background: #fff;
+	> .mm_header {
+		height: 2.425rem;
+		> .fa-angle-left {
+			position: absolute;
+			width: 2.2rem;
+			height: 2.2rem;
+			text-align: center;
+			line-height: 2.2rem;
+			font-size: 1.25rem;
+			color: #fff;
+		}
+
+		> .sheng {
+			font-size: 1.0rem;
+			position: absolute;
+			left: 0;
+			top: 0;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			margin: 0;
+			color: #fff;
+		}
+		
+	}
+	> .main > .content{
+		background: #fff;
+		> .mm_discount {
+			padding: 0 0.5rem;
+			padding-top: 0.95rem;
+			> .discount_detail {
+				// 关于商品详情坑内容
+				> .tit {
+					font-size: 0.9rem;
+				}
+				> h4 {
+					font-size: 0.6rem;
+					color: #FF4807;
+					margin-top: 0.45rem;
+					margin-bottom: 0;
+				}
+				> .info {
+					font-size: 0.55rem;
+					margin: 0.85rem	0;
+					> span {
+						color: #7C8289;
+					}
+				}
+				> .content {
+					overflow: hidden;
+					> .picwrap {
+						float: right;
+						overflow: hidden;
+						margin-left: 0.75rem;
+						margin-bottom: 0.75rem;
+						> img {
+						display: block;
+						width: 5.95rem;
+						height: 5.95rem;
+						}
+					}
+					> .conn {
+						> p {
+							color: #606060;
+							font-size: 0.85rem;
+							line-height: 1.2;
+							
+						}
+						> .img_wrap {
+							margin-bottom: 0;
+							> img {
+								width: 11.0rem;
+								height: 11.0rem;
+								display: block;
+							}
+						}
+
+					}
+				}
+			}
+			> .golink {
+				margin-top: 1.0rem;
+				> a {
+					display: block;
+					width: 16.75rem;
+					height: 1.5rem;
+					background-color: #FF9000;
+					text-align: center;
+					margin: 0 auto;
+					border-radius: 0.125rem;
+					color: #fff;
+					font-size: 0.6rem;
+					line-height: 1.5rem;
+				}
+			}
+		}
+		// 广告图
+		> .mm_ad {
+			overflow: hidden;
+			> img {
+				display: block;
+				width: 17.6rem;
+				height: 6.85rem;
+				margin: 2.25rem auto 1.5rem;
+			}
+		}
+		// 发表评论通用模板
+		> .mm_comment > .cu-content-pl{
+			> .tit {
+				padding: 0;
+				margin: 0;
+				padding-left: 0.45rem;
+				font-size: 1.0rem;
+				font-weight: 400;
+				margin-bottom: 0.75rem;
+			}
+			> .tit#newcomment {
+				margin-top: 0;
+				margin-bottom: 1.65rem;
+			}
+			> .reply {
+				// background: pink;
+				padding: 6px 8px;
+				.form {
+					border: 2px solid #ECEAE8;
+					border-radius: 2px;
+					padding: 4px 0 0 4px;
+					background: #fff;
+					position: relative;
+					width: 98%;
+					margin: 0px auto;
+					textarea {
+						width: 100%;
+						border: none;
+						outline: 0;
+						color: #666;
+						height: 68px;
+						font-size: 14px;
+						overflow-x: hidden;
+						overflow-y: auto;
+						resize: none;
+					}
+					.ctrl {
+						background: #fbfbfb;
+						height: 36px;
+						margin-left: -4px;
+						border-top: solid 1px #f2f2f2;
+						> input {
+							position: absolute;
+							width: 100px;
+							height: 39px;
+							right: -2px;
+							bottom: -2px;
+							border: 2px solid #ff841d;
+							font-size: 16px;
+							background: #ff841d;
+							border-left: none;
+							border-top: none;
+						}
+					}
+				}
+				
+			}
+			// > .list {
+			// 	padding: 1.35rem 0.5rem 2.25rem;
+			// 	ul li {
+			// 		overflow: hidden;
+			// 		> .userimg {
+			// 			width: 40px;
+			// 			height: 40px;
+			// 			float: left;
+			// 			border-radius: 50%;
+			// 			overflow: hidden;
+			// 			> img {
+			// 				display: block;
+			// 				width: 100%;
+			// 			}
+			// 		}
+			// 		> .con {
+			// 			padding-left: 10px;
+			// 			overflow: hidden;
+			// 			> .name {
+			// 				overflow: hidden;
+			// 				> .username {
+			// 					float: left;
+			// 					font-size: 13px;
+			// 					color: #5997c0;
+			// 				}
+			// 				> .time {
+			// 					float: right;
+			// 					color: #999999;
+			// 					font-size: 13px;
+			// 				}
+			// 			}
+			// 			> .content {
+			// 					font-size: 15px;
+			// 					color: #606060;
+			// 					line-height: 20px;
+			// 					word-break: break-all;
+
+			// 			}
+			// 		}
+			// 	}
+			// }
+		}
+	}
+}

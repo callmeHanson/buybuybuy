@@ -1,0 +1,173 @@
+@import 'common.less';
+
+// @font-face {font-family: "whfont";
+//   src: url('../images/arrow-right.svg'); /* IE9*/
+//   src: url('../images/arrow-right.svg#iefix') format('embedded-opentype'), /* IE6-IE8 */
+//   url('iconfont.svg?t=1511428036589#iconfont') format('svg'); /* iOS 4.1- */
+// }
+// .whfont {
+// 	font-family:"whfont" !important;
+//   font-size:16px;
+//   font-style:normal;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
+// .w_25 {
+// 	width: 25%;
+// }
+// html,body {
+// 	background: #F1F1F1;
+// }
+.mm_container {
+	> .mm_eight_icons {
+		> .content {
+			padding-top: 0.5rem;
+			padding-bottom: 0.25rem;
+			background: #F1F1F1;
+			> ul {
+				padding: 0.625rem 0;
+				background: #fff;
+			}
+			ul li {
+				width: 25%;
+				float: left;
+				margin-top: 0.85rem;
+				> a {
+					display: block;
+					text-align: center;
+					> img {
+						width: 2.5rem;
+						height: 2.5rem;
+
+					}
+					> p {
+						margin-top: 0.35rem;
+						margin-bottom: 0;
+						font-size: 0.6rem;
+						color: #000;
+					}
+				}
+			}
+			ul li.hide {
+				display: none;
+			}
+		}
+	}
+	> .mm_recommend {
+		background: #fff;
+		> .mm_recommend_t {
+			height: 1.75rem;
+			background: #FFA024;
+			padding: 0 0.5rem;
+			position: relative;
+			> h3 {
+				font-size: 0.85rem;
+				line-height: 1.75rem;
+				color: #fff;
+				margin: 0;
+
+			}
+			> span {
+				width: 1.0rem;
+				height: 1.0rem;
+				font-size: 0.5rem;
+				border: 0.075rem solid #fff;
+				border-radius: 50%;
+				background: transparent;
+				color: #fff;
+				position: absolute;
+				right: 0.5rem;
+				top: 50%;
+				transform: translateY(-50%);
+				text-align: center;
+				line-height: 0.85rem;
+			}
+		}
+		> .mm_recommend_b {
+			> ul li {
+				padding: 0.75rem 0.45rem;
+				border-bottom: 0.025rem solid #ccc;
+				> a {
+					display: block;
+
+					> .mm_img_wrapper {
+						width: 5.0rem;
+						height: 5.0rem;
+						> img {
+							display: block;
+							width: 100%;
+							height: 100%;
+						}
+					}
+					> .mm_info {
+						overflow: hidden;
+						padding-left: 0.6rem;
+						height: 5.0rem;
+
+						> .title {
+							height: 2.75rem;
+							> p {
+								text-align: left;
+								font-size: 0.775rem;
+								font-weight: 400;
+								color: #000;
+								line-height: 0.775rem;
+								> span {
+									color: #FF5007;
+								}
+							}
+						}
+						> .tips {
+							margin-top: 0.7rem;
+							color: #ccc;
+							font-size: 0.525rem;
+							> .comment {
+
+							}
+						}
+					}
+
+				}
+				
+				
+			}
+		}
+		> .mm_recommend_more {
+			height: 2.1rem;
+			padding: 0.45rem 0.5rem 0;
+			a {
+				display: block;
+				height: 1.6rem;
+				border: 0.05rem solid #ccc;
+				text-align: center;
+				line-height: 1.6rem;
+				color: #000;
+				font-size: 0.65rem;
+			}
+		}
+	}
+	> .mm_foot_txt {
+		height: 1.75rem;
+		background: #FF9710;
+		padding: 0 0.5rem;
+		position: relative;
+		margin-top: 0.5rem;
+		margin-bottom: 1.25rem;
+		> .brand_txt {
+			font-size: 0.8rem;
+			line-height: 1.75rem;
+			color: #fff;
+		}
+		> .icon_txt {
+			width: 1.0rem;
+			height: 1.0rem;
+			border-radius: 50%;
+			border: 0.075rem solid #fff;
+			background: transparent;
+			text-align: center;
+			color: #fff;
+			line-height: 1.0rem;
+			margin-top: 0.4rem;
+		}
+	}
+}

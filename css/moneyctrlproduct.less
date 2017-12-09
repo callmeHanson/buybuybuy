@@ -1,0 +1,226 @@
+@import 'common.less';
+.mm_container {
+	> .mm_header {
+		height: 2.45rem;
+		> .fa-angle-left {
+			position: absolute;
+			width: 2.2rem;
+			height: 2.2rem;
+			text-align: center;
+			line-height: 2.2rem;
+			font-size: 1.25rem;
+			color: #fff;
+		}
+
+		> .sheng {
+			font-size: 1.0rem;
+			position: absolute;
+			left: 0;
+			top: 0;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			margin: 0;
+			color: #fff;
+		}
+		
+	}
+	.main > .content{
+		background: #fff;
+		> .mm_discount {
+			padding: 0 0.5rem;
+			padding-top: 0.95rem;
+			> .discount_detail > .tit {
+				font-size: 0.95rem;
+				line-height: 1.5;
+			}
+			> .discount_detail > .info {
+				font-size: 0.55rem;
+				margin: 0.85rem	0;
+				> span {
+					color: #7C8289;
+				}
+			}
+			> .discount_detail > .content {
+				> .picwrap {
+					padding-left: 0.25rem;
+					float: right;
+					overflow: hidden;
+					> img {
+						display: block;
+						width: 5rem;
+						// width: 5.95rem;
+						// height: 5.95rem;
+					}
+				}
+				> .conn {
+					> p {
+						color: #606060;
+						font-size: 0.75rem;
+						line-height: 1.2;
+						margin-bottom: 0.65rem;
+					}
+					> .img_wrap {
+						> img {
+							width: 17.5rem;
+							height: 17.5rem;
+							display: block;
+							margin: 0 auto;
+						}
+					}
+
+				}
+			}
+			> .center > .content{
+				> ul#disstorck {
+
+					width: 6.85rem;
+					margin: 0 auto;
+					border: 1px solid #f1f1f1;
+					border-bottom-color: #dbdbdb;
+					border-width: 0 1px 1px 1px;
+					box-shadow: 1px 2px 5px rgba(0,0,0,0.1);
+					padding: 0 0.5rem;
+					padding-bottom: 0.45rem;
+					box-sizing: border-box;
+					> li {
+						border-bottom: 1px dashed #ccc;
+						color: #000;
+						font-size: 0.6rem;
+						>a >span {
+							padding: 0 0.45rem;
+						}
+						strong {
+							float: right;
+							font-weight: 400;
+							color: #F27503;
+						}
+					}
+				}
+			}
+			> .golink {
+				margin-top: 1.0rem;
+				> a {
+					display: block;
+					width: 16.75rem;
+					height: 1.5rem;
+					background-color: #FF9000;
+					text-align: center;
+					margin: 0 auto;
+					border-radius: 0.125rem;
+					color: #fff;
+					font-size: 0.6rem;
+					line-height: 1.5rem;
+				}
+			}
+		}
+		> .mm_ad {
+			overflow: hidden;
+			> img {
+				display: block;
+				width: 17.6rem;
+				height: 6.85rem;
+				margin: 2.25rem auto 1.5rem;
+			}
+		}
+		> .mm_comment > .cu-content-pl{
+			> .tit {
+				padding: 0;
+				margin: 0;
+				padding-left: 0.45rem;
+				font-size: 0.825rem;
+				font-weight: 400;
+				margin-bottom: 0.75rem;
+			}
+			> .tit#newcomment {
+				margin-top: 0;
+				margin-top: 30px;
+			}
+			> .reply {
+				// background: pink;
+				padding: 6px 8px;
+				.form {
+					border: 2px solid #ECEAE8;
+					border-radius: 2px;
+					padding: 4px 0 0 4px;
+					background: #fff;
+					position: relative;
+					width: 98%;
+					margin: 0px auto;
+					textarea {
+						width: 100%;
+						border: none;
+						outline: 0;
+						color: #666;
+						height: 68px;
+						font-size: 14px;
+						overflow-x: hidden;
+						overflow-y: auto;
+						resize: none;
+					}
+					.ctrl {
+						background: #fbfbfb;
+						height: 36px;
+						margin-left: -4px;
+						border-top: solid 1px #f2f2f2;
+						> input {
+							position: absolute;
+							width: 100px;
+							height: 39px;
+							right: -2px;
+							bottom: -2px;
+							border: 2px solid #ff841d;
+							font-size: 16px;
+							background: #ff841d;
+							border-left: none;
+							border-top: none;
+						}
+					}
+				}
+				
+			}
+			> .list {
+				padding: 1.35rem 0.5rem 2.25rem;
+				ul li {
+					overflow: hidden;
+					margin-bottom: 1.5rem;
+					> .userimg {
+						width: 40px;
+						height: 40px;
+						float: left;
+						border-radius: 50%;
+						overflow: hidden;
+						> img {
+							display: block;
+							width: 100%;
+						}
+					}
+					> .con {
+						padding-left: 10px;
+						overflow: hidden;
+						> .name {
+							overflow: hidden;
+							> .username {
+								float: left;
+								font-size: 13px;
+								color: #5997c0;
+							}
+							> .time {
+								float: right;
+								color: #999999;
+								font-size: 13px;
+							}
+						}
+						> .content {
+								font-size: 15px;
+								color: #606060;
+								line-height: 20px;
+								word-break: break-all;
+
+						}
+					}
+				}
+			}
+		}
+	}
+}

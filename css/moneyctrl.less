@@ -1,0 +1,120 @@
+@import 'common.less';
+
+.w_33 {
+	width: 33.333%;
+}
+body {
+	background: #fff;
+}
+.mm_container {
+	> .mm_header {
+		height: 2.2rem;
+		> .fa-angle-left {
+			position: absolute;
+			width: 2.2rem;
+			height: 2.2rem;
+			text-align: center;
+			line-height: 2.2rem;
+			font-size: 1.25rem;
+			color: #fff;
+		}
+
+		> .sheng {
+			position: absolute;
+			left: 0;
+			top: 0;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			margin: 0;
+			color: #fff;
+		}
+		
+	}
+	> .main {
+		background: #fff;
+		
+		> ul li {
+			padding: 0.75rem 0.45rem;
+			border-bottom: 0.025rem solid #ccc;
+			> a {
+				display: block;
+
+				> .mm_img_wrapper {
+					width: 5.0rem;
+					height: 5.0rem;
+					> img {
+						display: block;
+						width: 100%;
+						height: 100%;
+					}
+				}
+				> .mm_info {
+					overflow: hidden;
+					padding-left: 0.6rem;
+					height: 5.0rem;
+
+					> .title {
+						height: 2.75rem;
+						> p {
+							text-align: left;
+							font-size: 0.775rem;
+							font-weight: 400;
+							color: #000;
+							line-height: 0.775rem;
+							> span {
+								color: #FF5007;
+							}
+						}
+					}
+					> .tips {
+						margin-top: 0.7rem;
+						color: #ccc;
+						font-size: 0.525rem;
+						> .comment {
+
+						}
+					}
+				}
+
+			}
+
+		}
+		.mm_page {
+			margin-top: 0.85rem;
+			margin-bottom: 1.35rem;
+			height: 1.75rem;
+			> span {
+				float: left;
+				height: 100%;
+				text-align: center;
+				line-height: 1.75rem;
+				> a {
+					width: 4.1rem;
+					height: 1.65rem;
+					background: linear-gradient(to bottom, #EFEFEF, #D7D7D7);
+					display: block;
+					height: 100%;
+					margin: 0 auto;
+					border-radius: 0.125rem;
+					box-shadow: 0 0 0.025rem #666;
+					font-size: 0.65rem;
+
+				}
+				> select.selectPage {
+					border: 1px solid #ccc !important;
+					margin: 0 !important;
+					width: 4.5rem;
+					height: 1.75rem;
+					padding: 0;
+					padding-left: 1.0rem;
+					// 恢复select框右侧的小箭头
+					-webkit-appearance: menulist;
+					text-align: center;
+					box-sizing: border-box;
+				}
+			}
+			
+		}
+	}
+}

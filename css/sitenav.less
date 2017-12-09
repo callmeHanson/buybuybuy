@@ -1,0 +1,67 @@
+@import 'common.less';
+
+a:hover, a:focus {
+	text-decoration: none;
+}
+.mm_container {
+	background: #F1F1F1;
+	> .mm_header {
+		background: #FF841D;
+		height: 2.45rem;
+		> .fa-angle-left {
+			position: absolute;
+			width: 2.2rem;
+			height: 2.2rem;
+			text-align: center;
+			line-height: 2.2rem;
+			font-size: 1.25rem;
+			color: #fff;
+		}
+
+		> .sheng {
+			font-size: 1.05rem;
+			font-weight: 600;
+			position: absolute;
+			left: 0;
+			top: 0;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			margin: 0;
+			color: #fff;
+		}
+	}
+	> .mm_coupon {
+		> .mm_main {
+			background: #fff;
+			padding: 0 1.9rem;
+			padding-top: 0.5rem;
+			padding-bottom: 1.15rem;
+			> ul {
+				margin-bottom: 0;
+				> li {
+					float: left;
+					border: 0.05rem solid #B3B3B3;
+					background: #F4F4F4;
+					height: 2.2rem;
+					line-height: 2.1rem;
+					padding-left: 0.35rem;
+					padding-right: 0.4rem;
+					margin-right: 0.25rem;
+					margin-bottom: 0.25rem;
+					> a {
+						font-size: 0.85rem;
+						display: block;
+
+						> img {
+							width: 0.8rem;
+							height: 0.8rem;
+							margin-right: 0.45rem;
+							vertical-align: middle;
+						}
+					}
+				}
+			}
+		}
+	}
+}

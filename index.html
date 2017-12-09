@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>我的慢慢买首页</title>
+	<script src="js/rem.js"></script>
+	<link rel="stylesheet" href="lib/mui/css/mui.css">
+	<link rel="stylesheet" href="lib/fa/css/font-awesome.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div class="mm_container">
+		<!-- 头部 -->
+		<header class="mm_header">
+			<img class="mmm" src="images/header_logo.png" alt="">
+			<img class="app" src="images/header_app.png" alt="">
+		</header>
+		<!-- 搜索栏 -->
+		<nav class="mm_search">
+			<input type="text" placeholder="请输入你想比价的商品">
+			<button>搜索</button>
+		</nav>
+		<!-- 八宫格 -->
+		<section class="mm_eight_icons">
+
+			<div class="content">
+				<ul class="mui-clearfix">
+
+					<!-- 挖坑 -->
+					<!-- 多包裹了一个标签 -->
+					<!-- <ul>
+
+						<li>
+							<a href="#">
+								<img src="images/ic_search.png" alt="">
+								<p>比价搜索</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/ic_cu.png" alt="">
+								<p>比价搜索</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/ic_coudanpin.png" alt="">
+								<p>比价搜索</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/ic_bcj.png" alt="">
+								<p>比价搜索</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/haitao.png" alt="">
+								<p>比价搜索</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/ic_temai.png" alt="">
+								<p>比价搜索</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/ic_trend.png" alt="">
+								<p>比价搜索</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/gengduo.png" alt="">
+								<p>比价搜索</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/ic_coudanpin.png" alt="">
+								<p>比价搜索</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/ic_kb.png" alt="">
+								<p>比价搜索</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/ic_mall.png" alt="">
+								<p>比价搜索</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/ic_pp.png" alt="">
+								<p>比价搜索</p>
+							</a>
+						</li>
+
+					</ul> -->
+
+				</ul>
+			</div>
+			
+		</section>
+		<!-- 超值折扣推荐 -->
+		<section class="mm_recommend">
+			<div class="mm_recommend_t">
+				<h3 class="mui-pull-left">超值折扣推荐</h3>
+				<span class="mui-icon mui-icon-arrowright mui-pull-right"></span>
+			</div>
+			<div class="mm_recommend_b">
+				<!-- 挖坑 -->
+				<ul>
+					<!-- <li >
+		        <a href="javascript:;" class="mui-clearfix">
+		        	<div class="mm_img_wrapper mui-pull-left">
+	            	<img class="mui-media-object mui-pull-left" src="images/ic_kb.png">
+		        	</div>
+	            <div class="mm_info">
+            		<div class="title">
+            			<p class='mui-ellipsis-2'>移动端凑单品：海天 鲜味 生抽 1.28L<span>10.9元</span>
+            			</p>
+            		</div>
+                <div class="tips mui-clearfix">
+                	<span>京东商城 | 10-25 14:10</span>
+                	<span class="comment mui-pull-right">
+                		<i class="fa fa-commenting-o"></i>
+                		1
+                	</span>
+                </div>
+	            </div>
+		        </a>
+			    </li> -->
+
+			  </ul>
+
+			</div>
+			<div class="mm_recommend_more">
+				<a href="moneyctrl.html" >
+					更多优惠信息 >>
+				</a>
+			</div>
+		</section>
+		<!-- 品牌排行 -->
+		<section class="mm_foot_txt mui-clearfix">
+			<span class="mui-pull-left brand_txt">品牌排行</span>
+			<span class="mui-pull-right icon_txt">></span>
+		</section>
+		<!-- 底部登录注册 -->
+		<footer class="mm_footer">
+			<div class="mm_footer_t">
+				<a href="javascript:;">登录</a>
+				<a href="javascript:;">注册</a>
+				<a href="#" class="toTop">
+					<i class="fa fa-arrow-up"></i>
+				返回顶部
+				</a>
+			</div>
+			<div class="mm_footer_b">
+				<p class="mm_app">
+					<a href="#"><span class="app">手机APP下载</span></a>
+					<a href="#"><span class="mmm">慢慢买手机版</span></a>
+					--
+					<span>掌上比价平台</span>
+				</p>
+				<p class="mm_com">
+					m.manmanbuy.com
+				</p>
+			</div>
+		</footer>
+	</div>
+
+	<!-- 模板一 -->
+	<script type="text/html" id="tpl">
+		{{each result v i}}
+		<li data-indexmenuid="{{v.indexmenuId}}">
+			<a href="{{v.titlehref}}">
+				{{@v.img}}
+				<p>{{v.name}}</p>
+			</a>
+		</li>
+		{{/each}}
+	</script>
+	<!-- 模板二 -->
+	<script type="text/html" id="tpl2">
+		{{each result v i}}
+		<li >
+	    <a href="javascript:;" class="mui-clearfix">
+	    	<div class="mm_img_wrapper mui-pull-left">
+	      	{{@v.productImgSm}}
+	    	</div>
+	      <div class="mm_info">
+	    		<div class="title">
+	    			<p class='mui-ellipsis-2'>{{v.productName}}<span>{{v.productPinkage}}</span>
+	    			</p>
+	    		</div>
+	        <div class="tips mui-clearfix">
+	        	<span>{{v.productFrom}} | {{v.productTime}}</span>
+	        	<span class="comment mui-pull-right">
+	        		<i class="fa fa-commenting-o"></i>
+	        		{{i+1}}
+	        	</span>
+	        </div>
+	      </div>
+	    </a>
+	  </li>
+		{{/each}}
+
+	</script>
+
+	<script src="lib/jquery/jquery-3.2.1.js"></script>
+	<script src="lib/mui/js/mui.js"></script>
+	<script src="lib/artTemplate/template-web.js"></script>
+	
+
+	<script src="js/common.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>

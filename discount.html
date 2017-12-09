@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>商品详情</title>
+	<script src="js/rem.js"></script>
+	<link rel="stylesheet" href="lib/mui/css/mui.css">
+	<link rel="stylesheet" href="lib/fa/css/font-awesome.css">
+	<link rel="stylesheet" href="css/discount.css">
+</head>
+<body>
+	<div class="mm_container">
+		<!-- 头部 -->
+		<header class="mm_header">
+			<a href="javascript:history.go(-1);" class="fa fa-angle-left"></a>
+			<h1 class="sheng">国内折扣</h1>
+			<img class="app" src="images/header_app.png" alt="">
+		</header>
+
+		<main class="main">
+			<div class="content">
+				<!-- 商品主体 -->
+				<div class="mm_discount">
+
+					
+					<div class="discount_detail">
+						<!-- 挖坑3 -->
+					</div>
+					
+					<!-- 库存信息 -->
+					<div class="center">
+
+						<div class="content">
+							<!-- 挖坑2 -->
+						</div>
+						
+					</div>
+					<!-- 前往购买 -->
+					<div class="golink">
+						<a href="#">前往购买</a>
+					</div>
+
+				</div>
+				<!-- 小广告图片 -->
+				<div class="mm_ad">
+					<img src="images/mmbweixin2.png" alt="">
+				</div>
+				<!-- 评论区 -->
+				<div class="mm_comment">
+					<div class="cu-content-pl ui-border-t">
+					<!-- 挖坑1 -->
+
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- 底部登录注册 -->
+		<footer class="mm_footer">
+			<div class="mm_footer_t">
+				<a href="javascript:;">登录</a>
+				<a href="javascript:;">注册</a>
+				<a href="#" class="toTop">
+					<i class="fa fa-arrow-up"></i>
+				返回顶部
+				</a>
+			</div>
+			<div class="mm_footer_b">
+				<p class="mm_app">
+					<a href="#"><span class="app">手机APP下载</span></a>
+					<a href="#"><span class="mmm">慢慢买手机版</span></a>
+					--
+					<span>掌上比价平台</span>
+				</p>
+				<p class="mm_com">
+					m.manmanbuy.com
+				</p>
+			</div>
+		</footer>
+	</div>
+
+	<!-- 模板1：评论列表 -->
+	<script type="text/html", id="tpl">
+		{{@result[0].productComment}}
+	</script>
+	<!-- 模板2：各个地方的库存 -->
+	<!-- <script type="text/html" id="tpl2">
+		{{@result[0].productCity}}
+	</script> -->
+	
+	<script type="text/html" id="tpl3">
+		<%
+			var res = result[0];
+		%>
+		<!-- 标题 -->
+		<h3 class="tit">{{res.productName}}</h3>
+		<h4>{{res.productPrice}}</h4>
+		<!-- 标题时间信息 -->
+		<div class="info">
+			<span>{{res.productFrom}}</span>
+			<span>{{res.productTime}}</span>
+			<span>{{res.productTips}}</span>
+		</div>
+		<!-- 主体文本内容 -->
+		<div class="content">
+			<!-- 大标题 -->
+			<div class="picwrap">
+				<img src="images/right_fire.jpg" alt="烟火">
+			</div>
+			<!-- 文本内容 -->
+			<div class="conn">
+				<p>{{res.productInfo}}</p>
+<!-- 				<p>{{res.productInfo1}}</p> -->
+				<p class="img_wrap">
+					{{@res.productImg}}
+				</p>
+			</div>
+		</div>
+
+	</script>
+	<script src="lib/jquery/jquery-3.2.1.js"></script>
+	<script src="lib/mui/js/mui.js"></script>
+	<script src="lib/artTemplate/template-web.js"></script>
+	
+
+	<script src="js/common.js"></script>
+	<script src="js/discount.js"></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>我的凑单品</title>
+	<script src="js/rem.js"></script>
+	<!-- <link rel="stylesheet" href="lib/mui/css/mui.css"> -->
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="lib/fa/css/font-awesome.css">
+	<link rel="stylesheet" href="css/gsproduct.css">
+</head>
+<body>
+	<div class="mm_container">
+		<!-- 头部 -->
+		<header class="mm_header">
+			<a href="javascript:history.go(-1);" class="fa fa-angle-left"></a>
+			<h1 class="sheng">凑单品</h1>
+			<img class="app" src="images/header_app.png" alt="">
+		</header>
+
+		<div class="mm_coupon">
+			<!-- 凑单品头部 -->
+			<div class="mm_title clearfix">
+
+
+				<!-- 天猫超市 -->
+				<div class="mm_tianmao dropdown pull-left" style="width:30%;">
+				  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+				    <span>天猫超市</span>
+				    <span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu">
+						
+						<!-- 挖坑一 -->
+
+						<!-- <li><a href="#">京东</a></li>
+				    <li><a href="#">一号店</a></li>
+				    <li><a href="#">天猫超市</a></li> -->
+
+				  </ul>
+				</div>
+				<!-- 华南 -->
+				<div class="mm_huanan dropdown pull-left" style="width:30%;">
+				  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+				    <span>华南</span>
+				    <span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu">
+						
+						<!-- 挖坑二 -->
+
+				    <!-- <li><a href="#">京东</a></li>
+				    <li><a href="#">一号店</a></li>
+				    <li><a href="#">天猫超市</a></li> -->
+
+				  </ul>
+				</div>
+				<!-- 全部价格 -->
+				<div class="mm_all dropdown pull-left" style="width:30%;">
+				  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+				    <span>全部价格</span>
+				    <span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu">
+
+				    <li><a href="#">I</a></li>
+				    <li><a href="#">Love</a></li>
+				    <li><a href="#">You</a></li>
+
+				  </ul>
+				</div>
+				
+				<!-- 搜索框 -->
+				<div class="mm_search">
+					<em class="icon_search glyphicon glyphicon-search"></em>
+				</div>
+
+			</div>
+			<!-- 凑单品主体内容 -->
+			<div class="mm_main">
+				<ul class="clearfix">
+
+					<!-- 挖坑三 -->
+					<!-- <li>
+						<a href="#">
+							<div class="img_wrap">
+								<img src="http://img10.360buyimg.com/n7/jfs/t577/85/103283769/55548/3ecfcbf8/5461b6e1N70e46439.jpg" alt="">
+							</div>
+							<div class="info">
+								廿一客(21cake)专用餐具 1人份(不单独配送)
+							</div>
+							<div class="other clearfix">
+								<strong>¥0.50</strong>
+								<span class="pull-right">去凑单</span>
+							</div>
+						</a>
+					</li> -->
+
+				</ul>
+			</div>
+		</div>
+
+
+		<!-- 底部登录注册 -->
+		<footer class="mm_footer">
+			<div class="mm_footer_t">
+				<a href="javascript:;">登录</a>
+				<a href="javascript:;">注册</a>
+				<a href="#" class="toTop">
+					<i class="fa fa-arrow-up"></i>
+				返回顶部
+				</a>
+			</div>
+			<div class="mm_footer_b">
+				<p class="mm_app">
+					<a href="#"><span class="app">手机APP下载</span></a>
+					<a href="#"><span class="mmm">慢慢买手机版</span></a>
+					--
+					<span>掌上比价平台</span>
+				</p>
+				<p class="mm_com">
+					m.manmanbuy.com
+				</p>
+			</div>
+		</footer>
+	</div>
+	
+	<!-- 模板一 -->
+	<script type="text/html" id='tpl'>
+	{{each result v i}}
+
+    <li><a href="javascript:;" data-shopId="{{v.shopId}}">{{v.shopName}}</a></li>
+
+	{{/each}}
+	</script>
+
+	<!-- 模板二 -->
+	<script type="text/html" id='tpl2'>
+	{{each result v i}}
+
+    <li><a href="#" data-areaId="{{v.areaId}}">{{v.areaName}}</a></li>
+
+	{{/each}}
+	</script>
+
+	<!-- 模板三（主体内容） -->
+	<script type="text/html" id='tpl3'>
+		{{each result v i}}
+		<li>
+			<a href="javascript:;"
+			data-areaId="{{v.areaId}}"
+			data-productId="{{v.productId}}"
+			data-shopId="{{v.shopId}}">
+				<div class="img_wrap">
+					<img src="{{v.productImg}}" alt="">
+				</div>
+				<div class="info">
+					{{v.productName}}
+				</div>
+				<div class="other clearfix">
+					<strong>{{v.productPrice}}</strong>
+					<span class="pull-right">去凑单</span>
+				</div>
+			</a>
+		</li>
+		{{/each}}
+	</script>
+
+
+	<script src="lib/jquery/jquery-3.2.1.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.js"></script>
+	<!-- <script src="lib/mui/js/mui.js"></script> -->
+	<script src="lib/artTemplate/template-web.js"></script>
+	
+
+	<script src="js/common.js"></script>
+	<script src="js/gsproduct.js"></script>
+</body>
+</html>

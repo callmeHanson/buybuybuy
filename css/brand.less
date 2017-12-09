@@ -1,0 +1,226 @@
+@import 'common.less';
+
+// 重置bootstrap默认的锚点样式
+a:hover,a:focus {
+	text-decoration: none;
+}
+.mm_container {
+	> .mm_breadLine {
+		height: 1.85rem;
+		border-top: 0.05rem solid #E8E8E8;
+		
+		> ol {
+			margin: 0;
+			background: linear-gradient(to bottom, #fff, #EFEFEF);
+			border-bottom: 0.05rem solid #ccc;
+
+		}
+	}
+	> .mm_brand_wrap {
+		> .which_brand {
+			border-top: 0.05rem solid #C0C0C0;
+			border-bottom: 0.05rem solid #C0C0C0;
+			padding-left: 0.5rem;
+			background: #F3F3F3;
+			font-size: 0.7rem;
+			color: #7E3707;
+			line-height: 1.8rem;
+			font-weight: 600;
+		}
+		> .brand_list {
+			> ul {
+				margin-bottom: 0;
+				background: #fff;
+				> li {
+					height: 3.3rem;
+					border-bottom: 0.05rem solid #E7E7E7;
+					background-image: url('../images/arrow-right.svg');
+					background-repeat: no-repeat;
+					background-position: right center;
+					background-size: 1.0rem 1.0rem;
+					> a {
+						display: block;
+						width: 100%;
+						height: 100%;
+						box-sizing: border-box;
+						padding: 0.45rem 0.5rem;
+						top: 0;
+						left: 0;
+						> .icon_wrap {
+							float: left;
+							width: 1.0rem;
+							height: 1.0rem;
+							background: #C9C9C9;
+							text-align: center;
+							line-height: 1.0rem;
+							color: #fff;
+						}
+						> .icon_info {
+							margin-left: 1.5rem;
+							> .iphone {
+								font-size: 0.8rem;
+								margin-top: 0.2rem;
+								margin-bottom: 0.4rem;
+								line-height: 1;
+							}
+							> .num {
+								line-height: 1;
+								font-size: 0.65rem;
+								color: #92838D;
+								margin: 0;
+							}
+						}
+					}
+				}
+			}
+
+		}
+	}
+	> .mm_sell_wrap {
+		> .which_sell {
+			border-top: 0.05rem solid #C0C0C0;
+			border-bottom: 0.05rem solid #C0C0C0;
+			padding-left: 0.5rem;
+			background: #F3F3F3;
+			font-size: 0.7rem;
+			color: #7E3707;
+			line-height: 1.8rem;
+			font-weight: 600;
+		}
+		> .sell_list {
+			> ul {
+				margin-bottom: 0;
+				background: #fff;
+				> li {
+					padding: 0.625rem 0.65rem;
+					> a {
+						> .img_wrap {
+							> img {
+								display: block;
+								width: 4.9rem;
+								height: 4.9rem;
+
+							}
+						}
+						> .inf {
+							overflow: hidden;
+							padding-left: 0.55rem;
+							font-size: 0.75rem;
+							> p {
+								margin: 0;
+							}
+							> .tit {
+							}
+							> .price {
+								position: relative;
+								margin-top: 0.55rem;
+
+								> strong {
+								font-size: 0.8rem;
+								color: #E72206;
+
+								}
+								> span {
+									position: absolute;
+									right: 0;
+									top: 0;
+									width: 4.45rem;
+									height: 0.9rem;
+									background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'><path fill='#ff9000' d='m496.52887,736.87439l112.46838,-346.20175l364.01178,0l-294.48053,-213.97614l112.4809,-346.2005l-294.48053,213.96616l-294.53922,-213.96616l112.48215,346.2005l-294.4818,213.97614l364.01427,0l112.5246,346.20175z'  transform='translate(0, 812) scale(1, -1)'/></svg>");
+									// background-repeat: no-repeat;
+
+								}
+							}
+							> .others {
+								line-height: 1;
+								margin-top: 0.45rem;
+								> em {
+									font-size: 0.625rem;
+									color: #7B798A;
+
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	> .mm_comment_wrap {
+		> .new_comment {
+			border-top: 0.05rem solid #C0C0C0;
+			border-bottom: 0.05rem solid #C0C0C0;
+			padding-left: 0.5rem;
+			background: #F3F3F3;
+			font-size: 0.7rem;
+			color: #7E3707;
+			line-height: 1.8rem;
+			font-weight: 600;
+		}
+		> .comment_list {
+			> ul {
+				margin-bottom: 0;
+				background: #fff;
+				> li {
+					padding: 0.45rem 0.5rem;
+					border-bottom: 0.05rem solid #E8E8E8;
+					> a {
+						display: block;
+						height: 100%;
+						> .comment_tit {
+							overflow: hidden;
+							> .img_wrap {
+								> img {
+									display: block;
+									width: 5.0rem;
+									height: 5.0rem;
+
+								}
+							}
+							> .inf {
+								overflow: hidden;
+								padding-left: 0.875rem;
+								> .tit {
+									font-size: 0.75rem;
+									color: #8E949B;
+								}
+							}
+						}
+						> .comment_content {
+							> .content {
+								border: 0.05rem solid #E8E8E8;
+								background: #F8F8F8;
+								padding: 0.7rem 0.5rem;
+								> .content_t {
+									font-size: 0.55rem;
+									position: relative;
+									margin-bottom: 0.7rem;
+									> .users {
+										color: #316131;
+									}
+									> .stars {
+
+										float: left;
+										margin-left: 0.4rem;
+										width: 4.45rem;
+										height: 0.9rem;
+										background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'><path fill='#ff9000' d='m496.52887,736.87439l112.46838,-346.20175l364.01178,0l-294.48053,-213.97614l112.4809,-346.2005l-294.48053,213.96616l-294.53922,-213.96616l112.48215,346.2005l-294.4818,213.97614l364.01427,0l112.5246,346.20175z'  transform='translate(0, 812) scale(1, -1)'/></svg>");
+										// background-repeat: no-repeat;
+
+									}
+									> .timing {
+										color: #8B8481;
+									}
+								}
+								> .content_b {
+									font-size: 0.75rem;
+									color: #000;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

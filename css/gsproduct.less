@@ -1,0 +1,156 @@
+@import 'common.less';
+
+a:hover,a:focus {
+	text-decoration: none;
+}
+
+.mm_container {
+	background: #F1F1F1;
+	> .mm_header {
+		background: #FF841D;
+		height: 2.25rem;
+		> .fa-angle-left {
+			position: absolute;
+			width: 2.2rem;
+			height: 2.2rem;
+			text-align: center;
+			line-height: 2.2rem;
+			font-size: 1.25rem;
+			color: #fff;
+		}
+
+		> .sheng {
+			font-size: 1.15rem;
+			position: absolute;
+			left: 0;
+			top: 0;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			margin: 0;
+			color: #fff;
+		}
+	}
+	> .mm_coupon {
+
+		> .mm_title {
+			position: relative;
+			border-bottom: 2px solid #DBDBDB;
+			> .dropdown {
+				position: static;
+				> button {
+					width: 100%;
+					border: none;
+					position: relative;
+
+					> .caret {
+						position: absolute;
+						right: 0;
+						top: 50%;
+						transform: translateY(-50%);
+					}
+				}
+				> ul {
+					width: 100%;
+					> li {
+						border-bottom: 1px solid #ccc;
+						position: relative;
+						height: 1.9rem;
+						> a {
+							line-height: 1.5;
+						}
+
+						
+					}
+					> li.on:after {
+						content:'';
+						position: absolute;
+						height: 1.5rem;
+						width: 1.5rem;
+						top: 50%;
+						transform: translateY(-50%);
+						right: 2%;
+						// background: pink;
+						background: url('../images/true.jpg') no-repeat center center;
+						background-size: 100% 100%;
+					}
+				}
+			
+			}
+			> .mm_search {
+				width: 10%;
+				height: 100%;
+				position: absolute;
+				right: 0;
+				background: #fff;
+				> .icon_search {
+					display: block;
+					text-align: center;
+					line-height: 1.9rem;
+					font-size: 1.0rem;
+				}
+			}
+		}
+		> .mm_main {
+			
+			> ul {
+				margin-top: 0.45rem;
+				> li {
+					width: 50%;
+					height: 11.45rem;
+					background: #fff;
+					float: left;
+					padding: 0 0.2rem;
+					background: #F1F1F1;
+					margin-bottom: 0.4rem;
+					> a {
+						display: block;
+						height: 100%;
+						background: #FFF;
+						> .img_wrap {
+							> img {
+								display: block;
+								width: 8.85rem;
+								height: 8.75rem;
+
+							}
+
+						}
+						> .info {
+							line-height: 1;
+							font-size: 0.6rem;
+							// 截断文本
+							text-overflow: ellipsis;
+							overflow: hidden;
+							white-space: nowrap;
+							padding: 0 0.3rem;
+						}
+						> .other {
+							padding: 0 0.3rem;
+							margin-top: 0.4rem;
+							> strong {
+								font-size: 0.9rem;
+								color: #F85004;
+								font-weight: 600;
+
+							}
+							> span {
+
+								width: 3.125rem;
+								height: 1.35rem;
+								background: #FF9501;
+								font-size: 0.65rem;
+								color: #fff;
+								text-align: center;
+								line-height: 1.35rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+
+

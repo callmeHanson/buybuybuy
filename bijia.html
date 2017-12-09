@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>我的商品列表</title>
+	<script src="js/rem.js"></script>
+	<!-- <link rel="stylesheet" href="lib/mui/css/mui.css"> -->
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="lib/fa/css/font-awesome.css">
+	<link rel="stylesheet" href="css/bijia.css">
+</head>
+<body>
+	<div class="mm_container">
+		<!-- 头部 -->
+		<header class="mm_header">
+			<img class="mmm" src="images/header_logo.png" alt="">
+			<img class="app" src="images/header_app.png" alt="">
+		</header>
+		<!-- 搜索栏 -->
+		<nav class="mm_search">
+			<input type="text" placeholder="请输入你想比价的商品">
+			<button>搜索</button>
+		</nav>
+		<!-- 分类主体 -->
+		<section class="main">
+			<!-- 面包线 -->
+			<div class="bread_line">
+				<!-- 面包线 -->
+				<ol class="breadcrumb">
+				  <li><a href="index.html">首页</a></li>
+				  <li><a href="productlist.html">全部分类</a></li>
+				  <li><a href="#">电视</a></li>
+				</ol>
+				<!-- 筛选 -->
+				<a href="javascript:;" class="choose">筛选</a>
+			</div>
+			<!-- 商品详情 -->
+			<div class="product_bijia">
+				<!-- 商品详情头部 -->
+				<div class="product_media">
+					<h3>乐视TV(Letv)S50 Air全配版2D 50英寸 全高清LED液晶电视</h3>
+					<div class="img_wrapper">
+						<img src="http://pro.zuyushop.com:8015/ProPic/20166/Thumb/Thumb_2016060015515937123.png" alt="">
+					</div>
+					<em class="collect"><a href="#">收藏</a></em>
+				</div>
+				<!-- 商品详情小标题 -->
+				<div class="tab">
+					<a href="#" class="mai">比价购买</a>
+					<a href="#" class="can">产品参数</a>
+					<a href="#" class="ping">评价233</a>
+				</div>
+				<!-- 商品后台传来的表格标签 -->
+				<div class="plist">
+					
+					<!-- 挖坑--表格 -->
+
+
+				</div>
+				<!-- 商品提示 -->
+				<div class="tips">
+          * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+				</div>
+				<!-- 商品评论标题 -->
+				<div class="comm">
+					<div class="comm_tit">网友评价</div>
+					<!-- 内部有坑 -->
+					<div class="comm_main">
+						<ul>
+
+
+							<!-- 挖坑 -->
+							<!-- <li>
+								<p class="users clearfix">
+									<span class="users pull-left">b***r</span>
+									<span class="time pull-right">2016/10/1</span>
+								</p>
+								<p class="from clearfix">
+									<span class="stars"></span>
+									<span class="from pull-right">购买自：京东商城</span>
+								</p>
+								<p class="con">
+									使用了一周整体不错，主要是为了看纪录片和足球。装在窗户上有种大鱼缸的感觉哈！清晰度不错色彩也可以，应该说对得起2200的价格！还送了五年乐视会员，看英超所有比赛都free，但乐观乐视内容这块还不太丰富，应为家里也有百事通bestv和小米盒子，比较了下，电影百事通最好，纪录片小米最好，只有体育这块乐视比那两家好，还要多努力啊！电视本身有个不足，音响太差，太山寨了！而且不支持3.5mm接口或红白莲音频输出，害得我折腾半天，必须买光纤音频线
+								</p>
+							</li> -->
+
+
+						</ul>
+					</div>
+					<div class="more">
+						<a href="javascript:;">查看更多评价</a>
+					</div>
+				</div>
+				<!-- 商品评论的内容 -->
+			</div>
+
+		</section>
+		<!-- 底部登录注册 -->
+		<footer class="mm_footer">
+			<div class="mm_footer_t">
+				<a href="javascript:;">登录</a>
+				<a href="javascript:;">注册</a>
+				<a href="#" class="toTop">
+					<i class="fa fa-arrow-up"></i>
+				返回顶部
+				</a>
+			</div>
+			<div class="mm_footer_b">
+				<p class="mm_app">
+					<a href="#"><span class="app">手机APP下载</span></a>
+					<a href="#"><span class="mmm">慢慢买手机版</span></a>
+					--
+					<span>掌上比价平台</span>
+				</p>
+				<p class="mm_com">
+					m.manmanbuy.com
+				</p>
+			</div>
+		</footer>
+	</div>
+
+<!-- 评论模块 -->
+<script type="text/html" id="tpl">
+	{{each result v i}}
+
+	<li data-categoryId="{{v.categoryId}}"
+			data-comId="{{v.comId}}"
+			data-productId="{{v.productId}}">
+		<p class="users clearfix">
+			<span class="users pull-left">{{v.comName}}</span>
+			<span class="time pull-right">{{v.comTime}}</span>
+		</p>
+		<p class="from clearfix">
+			<span class="stars"></span>
+			<span class="from pull-right">{{v.comFrom}}</span>
+		</p>
+		<p class="con">
+			{{v.comContent}}
+		</p>
+	</li>
+
+	{{/each}}
+</script>
+
+
+	<script src="lib/jquery/jquery-3.2.1.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.js"></script>
+	<!-- <script src="lib/mui/js/mui.js"></script> -->
+	<script src="lib/artTemplate/template-web.js"></script>
+
+
+	<script src="js/common.js"></script>
+	<script src="js/bijia.js"></script>
+</body>
+</html>

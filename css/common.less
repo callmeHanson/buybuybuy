@@ -1,0 +1,120 @@
+@import 'base.less';
+
+// 修改滚动条的默认样式
+// &::-webkit-scrollbar{height: 0px;}
+// &::-webkit-scrollbar-track{background-color:#bee1eb;}
+// &::-webkit-scrollbar-thumb{background-color:#00aff0;}
+// &::-webkit-scrollbar-thumb:hover {background-color:#9c3}
+// &::-webkit-scrollbar-thumb:active {background-color:#00aff0}
+
+
+
+.w_25 {
+	width: 25%;
+}
+html,body {
+	background: #F1F1F1;
+}
+// 顶部和头部搜索，还有底部的脚
+.mm_container {
+	> .mm_header {
+		height: 2.45rem;
+		background: #FF841D;
+		position: relative;
+
+		> .mmm {
+			width: 9.275rem;
+			height: 1.25rem;
+			position: absolute;
+			left: 0.85rem;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		> .app {
+			width: 1.7rem;
+			height: 1.7rem;
+			position: absolute;
+			right: 0.375rem;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+	> .mm_search {
+		height: 2.6rem;
+		position: relative;
+		background: #fff;
+		> input {
+			position: absolute;
+			width: 14.25rem;
+			height: 1.5rem;
+			border:none;
+			border-radius: 0.75rem;
+			background: #F1F1F1;
+			left: 0.5rem;
+			top: 50%;
+			transform: translateY(-50%);
+			font-size: 0.625rem;
+			text-indent: 1.0rem;
+		}
+		> button {
+			position: absolute;
+			width: 3.15rem;
+			height: 1.5rem;
+			background: #FF841D;
+			right: 0.5rem;
+			top: 50%;
+			transform: translateY(-50%);
+			border:none;
+			border-radius: 0.75rem;
+			font-size: 0.75rem;
+			color: #fff;
+		}
+	}
+	> .mm_footer {
+		background: #EFEFEF;
+		> .mm_footer_t {
+			height: 1.7rem;
+			border-top: 0.05rem solid #BBBBBB;
+			border-bottom: 0.05rem solid #BBBBBB;
+			> a {
+				float: left;
+				width: 30%;
+				height: 100%;
+				border-right: 0.05rem solid #BBBBBB;
+				text-align: center;
+				line-height: 1.6rem;
+				font-size: 0.65rem;
+				> i {
+					color: #747474;
+				}
+			}
+			> a:nth-child(3) {
+				width: 40%;
+				border-right: none;
+			}
+		}
+		> .mm_footer_b {
+			padding: 0.85rem 0;
+			font-size: 0.6rem;
+			text-align: center;
+			> .mm_app {
+				margin: 0;
+				line-height: 1.2;
+				font-size: 0.6rem;
+				.app {
+					font-size: 0.6rem;
+					color: #FF050E;
+				}
+				.mmm {
+					font-size: 0.6rem;
+					color: #000;
+				}
+			}
+			> .mm_com {
+				margin: 0;
+				line-height: 1.2;
+				font-size: 0.6rem;
+			}
+		}
+	}
+}

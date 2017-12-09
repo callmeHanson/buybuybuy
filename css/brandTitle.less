@@ -1,0 +1,56 @@
+@import 'common.less';
+
+a:hover,a:focus {
+	text-decoration: none;
+}
+.mm_container {
+	> .mm_breadLine {
+		height: 1.85rem;
+		border-top: 0.05rem solid #E8E8E8;
+		
+		> ol {
+			margin: 0;
+			background: linear-gradient(to bottom, #fff, #EFEFEF);
+			border-bottom: 0.05rem solid #ccc;
+
+		}
+	}
+	> .mm_brand_wrap {
+		overflow: hidden;
+		background: #fff;
+		> .brand_all {
+			border: 0.05rem solid #C4C4C4;
+			margin: 0.5rem 0.25rem;
+			font-size: 0.775rem;
+			color: #762903;
+			padding-left: 0.5rem;
+			line-height: 1.85rem;
+			background: #EEEEEE;
+		}
+		> .brand_ul {
+			> ul {
+				border-radius: 0.2rem;
+				border: 0.05rem solid #CCCCCC;
+				> li {
+					height: 2.0rem;
+					border-bottom: 0.05rem solid #CCCCCC;
+					background: #EDEDED;
+					padding: 0 0.8rem;
+					line-height: 1.95rem;
+					font-size: 0.8rem;
+					font-weight: 600;
+					> a {
+						display: block;
+						position: relative;
+						> span {
+							position: absolute;
+							right: 0;
+							top: 50%;
+							transform: translateY(-50%);
+						}
+					}
+				}
+			}
+		}
+	}
+}
